@@ -1,0 +1,13 @@
+<%= form_for @event, html: {class: "form-horizontal"} do |f| %>
+  <%= f.label :date %>
+  <%= f.date_field :date %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.label :requires_id %>
+  <%= f.check_box :requires_id %>
+  <%= f.label :capacity %>
+  <%= f.number_field :capacity %>
+  <%= f.label :directions %>
+  <%= f.text_area :directions %>
+  <%= f.submit %>
+<% end %>
